@@ -1,0 +1,22 @@
+[project]
+name = "resume-critic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "VaishnaviRatan", email = "vaishnavi.ratan24@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "openai>=3.0.0",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.2.2",
+    "streamlit>=1.61.1",
+]
+
+[project.scripts]
+resume-critic = "resume_critic:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
